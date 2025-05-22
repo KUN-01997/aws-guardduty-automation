@@ -17,20 +17,6 @@ This project demonstrates how to automate the detection and response of security
 
 ---
 
-## Architecture Overview
-
-```
-┌────────────┐       ┌─────────────┐       ┌──────────────┐       ┌────────────┐
-│ GuardDuty  │──────▶ EventBridge │──────▶│   Lambda      │──────▶│   SNS Topic│
-└────────────┘       └─────────────┘       └──────────────┘       └────┬───────┘
-                                                        │               │
-                                                ┌───────▼──────┐  ┌─────▼───────┐
-                                                │ DynamoDB     │  │ Email Alert │
-                                                └──────────────┘  └─────────────┘
-```
-
----
-
 ## Technologies Used
 
 | Tool       | Purpose                             |
